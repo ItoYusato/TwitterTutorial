@@ -10,10 +10,33 @@ import UIKit
 
 class MainTabController: UITabBarController {
 
+    //MARK: - Prioperties
+    
+    //MARK; - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .systemPink
+        configureViewControllers()
     }
-
+    
+    //MARK: - Helpers
+    
+    //アプリ起動時の画面のtabBarにそれぞれのアイコンを追加　それぞれのviewControllerをインスタンス化
+    func configureViewControllers() {
+        
+        let feed = FeedController()
+        feed.tabBarItem.image = UIImage(named: "home_unselected")
+        
+        let explore = ExploreController()
+        explore.tabBarItem.image = UIImage(named: "search_unselected")
+        
+        let notifications = NotificationsController()
+        notifications.tabBarItem.image = UIImage(named: "search_unselected")
+        
+        let conversations = ConversationsController()
+        conversations.tabBarItem.image = UIImage(named: "search_unselected")
+        
+        viewControllers = [feed, explore, notifications, conversations]
+    }
 }
