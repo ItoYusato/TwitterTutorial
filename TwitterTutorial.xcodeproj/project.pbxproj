@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		9A94A9FE2495DD9C000C196F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94A9FD2495DD9C000C196F /* AppDelegate.swift */; };
 		9A94AA002495DD9C000C196F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94A9FF2495DD9C000C196F /* SceneDelegate.swift */; };
-		9A94AA022495DD9C000C196F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94AA012495DD9C000C196F /* ViewController.swift */; };
 		9A94AA052495DD9C000C196F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A94AA032495DD9C000C196F /* Main.storyboard */; };
 		9A94AA072495DD9E000C196F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A94AA062495DD9E000C196F /* Assets.xcassets */; };
 		9A94AA0A2495DD9E000C196F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A94AA082495DD9E000C196F /* LaunchScreen.storyboard */; };
 		9A94AA152495DD9F000C196F /* TwitterTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94AA142495DD9F000C196F /* TwitterTutorialTests.swift */; };
 		9A94AA202495DD9F000C196F /* TwitterTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94AA1F2495DD9F000C196F /* TwitterTutorialUITests.swift */; };
+		9A94AA392495E0E6000C196F /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94AA382495E0E6000C196F /* MainTabController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		9A94A9FA2495DD9C000C196F /* TwitterTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A94A9FD2495DD9C000C196F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A94A9FF2495DD9C000C196F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A94AA012495DD9C000C196F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A94AA042495DD9C000C196F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A94AA062495DD9E000C196F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A94AA092495DD9E000C196F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		9A94AA1B2495DD9F000C196F /* TwitterTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A94AA1F2495DD9F000C196F /* TwitterTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTutorialUITests.swift; sourceTree = "<group>"; };
 		9A94AA212495DD9F000C196F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A94AA382495E0E6000C196F /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,16 @@
 		9A94A9FC2495DD9C000C196F /* TwitterTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				9A94AA372495DF88000C196F /* Model */,
+				9A94AA362495DF85000C196F /* View */,
+				9A94AA352495DF83000C196F /* ViewModel */,
+				9A94AA342495DF80000C196F /* Controller */,
+				9A94AA322495DF6A000C196F /* API */,
+				9A94AA312495DF63000C196F /* Utilis */,
+				9A94AA302495DF60000C196F /* New Group1 */,
+				9A94AA2D2495DF4F000C196F /* New Group */,
 				9A94A9FD2495DD9C000C196F /* AppDelegate.swift */,
 				9A94A9FF2495DD9C000C196F /* SceneDelegate.swift */,
-				9A94AA012495DD9C000C196F /* ViewController.swift */,
 				9A94AA032495DD9C000C196F /* Main.storyboard */,
 				9A94AA062495DD9E000C196F /* Assets.xcassets */,
 				9A94AA082495DD9E000C196F /* LaunchScreen.storyboard */,
@@ -126,6 +133,63 @@
 				9A94AA212495DD9F000C196F /* Info.plist */,
 			);
 			path = TwitterTutorialUITests;
+			sourceTree = "<group>";
+		};
+		9A94AA2D2495DF4F000C196F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9A94AA302495DF60000C196F /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		9A94AA312495DF63000C196F /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		9A94AA322495DF6A000C196F /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9A94AA342495DF80000C196F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A94AA382495E0E6000C196F /* MainTabController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A94AA352495DF83000C196F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9A94AA362495DF85000C196F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A94AA372495DF88000C196F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +323,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A94AA022495DD9C000C196F /* ViewController.swift in Sources */,
 				9A94A9FE2495DD9C000C196F /* AppDelegate.swift in Sources */,
 				9A94AA002495DD9C000C196F /* SceneDelegate.swift in Sources */,
+				9A94AA392495E0E6000C196F /* MainTabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +508,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusato.TwitterTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,7 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yusato.TwitterTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
